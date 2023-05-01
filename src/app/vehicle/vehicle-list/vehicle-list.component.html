@@ -1,6 +1,9 @@
 <div class="container-fluid">
   <div class="row">
-    <img src="../../../../foto.png" alt="Banner de la pagina">
+    <h1>TuSegundazo.com</h1>
+  </div>
+  <div class="row">
+    <img class="car-header-img" src="https://github.com/jp-hidalgo/ParcialJph/blob/main/foto.png?raw=true" alt="Banner de la pagina">
   </div>
   <div class="col-6">
     <table class="table">
@@ -19,6 +22,7 @@
           <td>{{vehicle.linea}}</td>
           <td>{{vehicle.modelo}}</td>
         </tr>
+        <tr *ngFor="let marca of myMarcas">Total {{marca}}:{{marcas[marca]}}</tr>
       </tbody>
     </table>
   </div>
